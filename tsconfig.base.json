@@ -1,0 +1,29 @@
+{
+  "extends": "astro/tsconfigs/strictest",
+  "compilerOptions": {
+    "noImplicitAny": true,
+    "noImplicitThis": true,
+    "alwaysStrict": true,
+    "strictBindCallApply": true,
+    "strictNullChecks": true,
+    "strictFunctionTypes": true,
+    "experimentalDecorators": true,
+    "importHelpers": true,
+    "target": "es2015",
+    "module": "esnext",
+    "lib": ["es2017", "dom"],
+    "skipLibCheck": true,
+    "skipDefaultLibCheck": true,
+    "resolveJsonModule": true,
+    "moduleResolution": "node",
+    "isolatedModules": true,
+    "baseUrl": ".",
+    "rootDir": ".",
+    "paths": {
+      "@astro-prototype/dashboards": ["libs/dashboards/src/index.js"],
+      "@astro-prototype/home": ["libs/home/src/index.js"],
+      "@astro-prototype/settings": ["libs/settings/src/index.ts"],
+      "@astro-prototype/tools": ["libs/tools/src/index.js"]
+    }
+  }
+}

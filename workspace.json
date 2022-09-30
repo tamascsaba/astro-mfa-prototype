@@ -1,0 +1,12 @@
+{
+  "$schema": "./node_modules/nx/schemas/workspace-schema.json",
+  "version": 2,
+  "projects": {
+    "mfa-app": "apps/mfa-app",
+    "mfa-app-e2e": "apps/mfa-app-e2e",
+    "dashboards": "libs/dashboards",
+    "home": "libs/home",
+    "settings": "libs/settings",
+    "tools": "libs/tools"
+  }
+}

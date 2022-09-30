@@ -1,0 +1,9 @@
+---
+import Shell from '../layouts/shell.astro';
+import { HelloComponent } from '@astro-prototype/settings';
+
+const helpText = 'Input binding click to hide';
+---
+<Shell>
+  <HelloComponent helpText={helpText} client:only="@analogjs/astro-angular" />
+</Shell>

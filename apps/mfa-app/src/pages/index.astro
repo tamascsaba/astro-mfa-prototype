@@ -1,0 +1,16 @@
+---
+import { Home } from '@astro-prototype/home';
+import Shell from '../layouts/shell.astro';
+
+const someProps = {
+  initialCount: 1,
+};
+
+---
+<Shell>
+  <Home {...someProps} client:visible>
+    <h1>I am a React ⚛️ component.</h1>
+  </Home>
+</Shell>
+
+
